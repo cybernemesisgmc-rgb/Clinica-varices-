@@ -10,7 +10,7 @@ export default function Home() {
     { id: '3', name: 'Dr. Francisco Berrocal', specialty: 'Cirujano General', image: '/specialists/specialist-2.jpg' },
     { id: '4', name: 'Dr. Rubén Banda', specialty: 'Urólogo', image: '/specialists/specialist-3.jpg' },
     { id: '5', name: 'Dr. Lenin Ballesteros', specialty: 'Ortopedia Mínimamente Invasiva', image: '/specialists/specialist-4.jpg' },
-    {id: '6', name: 'Dr. Luis Carlos Velasco', specialty: 'Urólogo', image: '/specialists/luis-velasco.jpg' }
+    {id: '6', name: 'Dr. Luis Carlos Velasco', specialty: 'Urólogo', image: '/specialists/luis-velasco.jpg' },
   ];
   
   const procedures = [
@@ -176,7 +176,7 @@ export default function Home() {
       <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-16" style={{ color: "#6b4d9f" }}>Nuestros Especialistas</h2>
-          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6" style={{ overflowX: 'auto' }}>
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6">
             {specialists.map((specialist, index) => (
               <div
                 key={specialist.id}
