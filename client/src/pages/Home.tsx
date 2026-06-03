@@ -10,7 +10,7 @@ export default function Home() {
     { id: '3', name: 'Dr. Francisco Berrocal', specialty: 'Cirujano General', image: '/specialists/specialist-2.jpg' },
     { id: '4', name: 'Dr. Rubén Banda', specialty: 'Urólogo', image: '/specialists/specialist-3.jpg' },
     { id: '5', name: 'Dr. Lenin Ballesteros', specialty: 'Ortopedia Mínimamente Invasiva', image: '/specialists/specialist-4.jpg' },
-    {id: '6', name: 'Dr. Luis Carlos Velasco', specialty: 'Urólogo', image: '/specialists/luis-velasco.jpg' }
+    {id: '6', name: 'Dr. Luis Carlos Velasco', specialty: 'Urólogo', image: '/specialists/luis-velasco.jpg' },
   ];
   
   const procedures = [
