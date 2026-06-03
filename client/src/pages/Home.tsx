@@ -146,8 +146,8 @@ export default function Home() {
           backgroundSize: "cover"
         }}
       >
-        {/* Dark Overlay */}
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}></div>
+        {/* Dark Oveay */}
+        <div className="asolute inset-0" style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}></div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-2" style={{ fontFamily: "'Playfair Display', serif", letterSpacing: "-0.5px" }}>Bienvenidos</h1>
           <p className="text-2xl md:text-4xl mb-8" style={{ fontFamily: "'Playfair Display', serif", color: "#45bfc5", fontWeight: 600, letterSpacing: "0.5px" }}>Clínica Centro de Varices y Cirugías Ambulatorias</p>
@@ -160,6 +160,7 @@ export default function Home() {
           >
             Agendar Cita
           </button>
+          <p className="mt-6 text-lg font-medium text-white">Atendemos pacientes particulares</p>
         </div>
       </section>
 
