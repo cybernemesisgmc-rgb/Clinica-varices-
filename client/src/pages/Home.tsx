@@ -497,7 +497,7 @@ export default function Home() {
             {/* EPS Sanitas */}
             <div className="flex items-center justify-center" style={{ minHeight: '120px' }}>
               <img
-                src="/manus-storage/pasted_file_Nhrx7m_image_aa53cc65.png"
+                src="/logos/sanitas.png"
                 alt="EPS Sanitas"
                 className="h-32 object-contain hover:scale-110 transition-transform duration-300"
               />
@@ -505,7 +505,7 @@ export default function Home() {
             {/* FOMAG */}
             <div className="flex items-center justify-center" style={{ minHeight: '120px' }}>
               <img
-                src="/manus-storage/pasted_file_v9DLwq_image_23346ca3.png"
+                src="/logos/fomag.png"
                 alt="FOMAG"
                 className="h-28 object-contain hover:scale-110 transition-transform duration-300"
               />
@@ -513,7 +513,7 @@ export default function Home() {
             {/* Colsanitas */}
             <div className="flex items-center justify-center" style={{ minHeight: '120px' }}>
               <img
-                src="/manus-storage/pasted_file_2bnXxy_image_93d0382a.png"
+                src="/logos/colsanitas.png"
                 alt="Colsanitas"
                 className="h-32 object-contain hover:scale-110 transition-transform duration-300"
               />
