@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Zap, Droplets, Scissors, Syringe, Eye, Gauge, Lightbulb, Wind } from 'lucide-react';
+import { Heart, Zap, Droplets, Scissors, Syringe, Eye, Gauge, Lightbulb, Wind, Activity, Bone } from 'lucide-react';
 
 export default function Home() {
   const [expandedService, setExpandedService] = useState<string | null>(null);
@@ -103,8 +103,148 @@ export default function Home() {
       icon: Heart,
       color1: '#45bfc5',
       color2: '#45bfc5'
-    }
-  ];
+    },
+  {
+    id: 'cirugias-urologicas',
+    title: 'Cirugías Urológicas',
+    subtitle: 'Procedimientos Especializados',
+    shortDesc: 'Tratamientos quirúrgicos para patologías urológicas.',
+    fullDesc: 'Procedimientos quirúrgicos especializados para el diagnóstico y tratamiento de enfermedades del sistema urinario y reproductor masculino.',
+    icon: Scissors,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+    id: 'circuncision',
+    title: 'Circuncisión',
+    subtitle: 'Cirugía Ambulatoria',
+    shortDesc: 'Procedimiento quirúrgico del prepucio.',
+    fullDesc: 'Intervención segura y mínimamente invasiva para tratar condiciones médicas o mejorar la higiene y el bienestar del paciente.',
+    icon: Scissors,
+    color1: '#6b4d9f',
+    color2: '#6b4d9f'
+  },
+  {
+    id: 'verrugas-genitales',
+    title: 'Resección de Verrugas Genitales',
+    subtitle: 'Tratamiento Quirúrgico',
+    shortDesc: 'Eliminación de lesiones genitales.',
+    fullDesc: 'Procedimiento para la remoción segura y eficaz de verrugas genitales mediante técnicas mínimamente invasivas.',
+    icon: Syringe,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+    id: 'hidrocele',
+    title: 'Tratamiento de Hidrocele',
+    subtitle: 'Cirugía Urológica',
+    shortDesc: 'Corrección de acumulación de líquido escrotal.',
+    fullDesc: 'Procedimiento quirúrgico destinado a corregir el hidrocele y aliviar molestias o aumento de volumen escrotal.',
+    icon: Droplets,
+    color1: '#6b4d9f',
+    color2: '#6b4d9f'
+  },
+  {
+    id: 'varicocele',
+    title: 'Tratamiento de Varicocele',
+    subtitle: 'Corrección Venosa',
+    shortDesc: 'Manejo quirúrgico del varicocele.',
+    fullDesc: 'Tratamiento especializado para corregir la dilatación de las venas del cordón espermático y mejorar la salud testicular.',
+    icon: Heart,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+    id: 'cistoscopia',
+    title: 'Cistoscopia',
+    subtitle: 'Diagnóstico Endoscópico',
+    shortDesc: 'Visualización interna de la vejiga y uretra.',
+    fullDesc: 'Estudio especializado que permite examinar la uretra y la vejiga mediante un instrumento endoscópico de alta precisión.',
+    icon: Eye,
+    color1: '#6b4d9f',
+    color2: '#6b4d9f'
+  },
+  {
+    id: 'evaporizacion-prostata',
+    title: 'Evaporización Prostática',
+    subtitle: 'Tratamiento con Láser',
+    shortDesc: 'Manejo mínimamente invasivo del crecimiento prostático.',
+    fullDesc: 'Procedimiento láser que elimina tejido prostático obstructivo con menor sangrado y recuperación más rápida.',
+    icon: Zap,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+    id: 'reseccion-prostata',
+    title: 'Resección Prostática',
+    subtitle: 'Técnica Mínimamente Invasiva',
+    shortDesc: 'Tratamiento quirúrgico de la hiperplasia prostática.',
+    fullDesc: 'Procedimiento diseñado para aliviar la obstrucción urinaria causada por el crecimiento benigno de la próstata.',
+    icon: Gauge,
+    color1: '#6b4d9f',
+    color2: '#6b4d9f'
+  },
+  {
+    id: 'calculos-laser',
+    title: 'Cálculos Urinarios con Láser',
+    subtitle: 'Tratamiento Mínimamente Invasivo',
+    shortDesc: 'Fragmentación de cálculos mediante tecnología láser.',
+    fullDesc: 'Tratamiento avanzado para cálculos urinarios utilizando láser de alta precisión, permitiendo una recuperación más rápida y menos molestias.',
+    icon: Lightbulb,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+    id: 'uroflujometria',
+    title: 'Uroflujometría',
+    subtitle: 'Evaluación del Flujo Urinario',
+    shortDesc: 'Medición objetiva de la micción.',
+    fullDesc: 'Estudio diagnóstico que analiza la velocidad y el patrón del flujo urinario para detectar alteraciones funcionales.',
+    icon: Wind,
+    color1: '#6b4d9f',
+    color2: '#6b4d9f'
+  },
+  {
+    id: 'urodinamia',
+    title: 'Urodinamia',
+    subtitle: 'Estudio Funcional',
+    shortDesc: 'Evaluación avanzada de la función vesical.',
+    fullDesc: 'Prueba diagnóstica especializada que estudia el funcionamiento de la vejiga, esfínteres y tracto urinario inferior.',
+    icon: Gauge,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+    id: 'cistitis',
+    title: 'Manejo de la Cistitis',
+    subtitle: 'Diagnóstico y Tratamiento',
+    shortDesc: 'Atención integral de infecciones urinarias.',
+    fullDesc: 'Evaluación, diagnóstico y tratamiento personalizado de procesos inflamatorios e infecciosos de la vejiga.',
+    icon: Droplets,
+    color1: '#6b4d9f',
+    color2: '#6b4d9f'
+  },
+  {
+    id: 'incontinencia',
+    title: 'Incontinencia Urinaria',
+    subtitle: 'Manejo Especializado',
+    shortDesc: 'Diagnóstico y tratamiento de la pérdida involuntaria de orina.',
+    fullDesc: 'Abordaje integral para mejorar la continencia urinaria mediante tratamientos médicos y procedimientos especializados.',
+    icon: Heart,
+    color1: '#45bfc5',
+    color2: '#45bfc5'
+  },
+  {
+  id: 'artroscopia',
+  title: 'Cirugías Artroscópicas',
+  subtitle: 'Rodilla y Hombro',
+  shortDesc: 'Procedimientos mínimamente invasivos para el tratamiento de lesiones articulares.',
+  fullDesc: 'Cirugías artroscópicas de rodilla y hombro realizadas mediante pequeñas incisiones y tecnología de alta definición. Permiten diagnosticar y tratar lesiones de ligamentos, meniscos, cartílago, tendones y otras estructuras articulares, favoreciendo una recuperación más rápida, menor dolor postoperatorio y un retorno temprano a las actividades cotidianas y deportivas.',
+  icon: Bone,
+  color1: '#45bfc5',
+  color2: '#45bfc5'
+  },
+];
 
   return (
     <div className="min-h-screen bg-white">
@@ -250,12 +390,28 @@ export default function Home() {
       {/* Procedures Section */}
       <section id="procedimientos" className="py-20 px-4" style={{ background: "linear-gradient(135deg, #f9f7fc 0%, #ffffff 50%, #f0f9fa 100%)" }}>
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4" style={{ background: "linear-gradient(135deg, #45bfc5 0%, #6b4d9f 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Nuestros Procedimientos</h2>
-            <div className="w-24 h-1 mx-auto" style={{ background: "linear-gradient(90deg, #45bfc5, #6b4d9f)", animation: "glow 2s ease-in-out infinite" }}></div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+ <div className="text-center mb-16">
+    <h2
+      className="text-5xl font-bold mb-4"
+      style={{
+        background: "linear-gradient(135deg, #45bfc5 0%, #6b4d9f 100%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        backgroundClip: "text"
+      }}
+    >
+      Nuestros Procedimientos
+    </h2>
+
+    <div
+      className="w-24 h-1 mx-auto"
+      style={{
+        background: "linear-gradient(90deg, #45bfc5, #6b4d9f)"
+      }}
+    />
+  </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {procedures.map((procedure, idx) => {
               const Icon = procedure.icon;
               return (
