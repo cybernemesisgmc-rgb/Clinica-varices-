@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -114,12 +115,18 @@
 }
 
 @layer base {
-  * {
+    * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -218,4 +225,14 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+section[id] {
+  scroll-margin-top: 8rem;
 }

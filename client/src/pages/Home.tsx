@@ -262,7 +262,7 @@ export default function Home() {
               <a href="#quienes-somos" className="text-gray-700 hover:text-cyan-600 transition">Quiénes Somos</a>
               <a href="#procedimientos" className="text-gray-700 hover:text-cyan-600 transition">Procedimientos</a>
               <a href="#contacto" className="text-gray-700 hover:text-cyan-600 transition">Contacto</a>
-            {/* <a href="/financial-statements" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Estados Financieros</a> */}
+              <a href="/financial-statements" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Estados Financieros</a>
             <button
               onClick={() => window.open(`https://wa.me/573135735276?text=Hola, quisiera agendar una cita`, "_blank")}
               style={{ backgroundColor: "#45bfc5" }}
@@ -305,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Description Section */}
-      <section  id="quienes-somos" className="py-16 px-4" style={{ backgroundColor: "#f9f7fc" }}>
+      <section  id="quienes-somos" className="py-16 px-4 scroll-mt-32" style={{ backgroundColor: "#f9f7fc" }}>
         <div className="container text-center">
           <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Somos especialistas en el tratamiento de varices con tecnología de vanguardia y un equipo médico altamente capacitado. Ofrecemos soluciones personalizadas para mejorar tu calidad de vida.
@@ -314,9 +314,9 @@ export default function Home() {
       </section>
 
       {/* Specialists Section - Grid Layout */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
+      <section className="pt-9 pb-10 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-16" style={{ color: "#6b4d9f" }}>Nuestros Especialistas</h2>
+          <h2 className="text-4xl font-bold text-center mb-10" style={{ color: "#6b4d9f" }}>Nuestros Especialistas</h2>
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6">
             {specialists.map((specialist, index) => (
               <div
@@ -388,9 +388,9 @@ export default function Home() {
       `}</style>
 
       {/* Procedures Section */}
-      <section id="procedimientos" className="py-20 px-4" style={{ background: "linear-gradient(135deg, #f9f7fc 0%, #ffffff 50%, #f0f9fa 100%)" }}>
+      <section id="procedimientos" className="pt-2 pb-0 px-4" style={{ background: "linear-gradient(135deg, #f9f7fc 0%, #ffffff 50%, #f0f9fa 100%)" }}>
         <div className="container">
- <div className="text-center mb-16">
+ <div className="text-center mb-12">
     <h2
       className="text-5xl font-bold mb-4"
       style={{
@@ -415,14 +415,50 @@ export default function Home() {
             {procedures.map((procedure, idx) => {
               const Icon = procedure.icon;
               return (
+                    <React.Fragment key={procedure.id}>
+      
+      {procedure.id === "evlt" && (
+        <div className="col-span-full text-center mt-0 mb-8">
+          <h3
+            className="text-3xl font-bold"
+            style={{ color: "#6b4d9f" }}
+          >
+            Cirugía Vascular y Tratamiento de Várices
+          </h3>
+        </div>
+      )}
+
+      {procedure.id === "cirugias-urologicas" && (
+        <div className="col-span-full text-center py-6">
+          <h3
+            className="text-3xl font-bold"
+            style={{ color: "#6b4d9f" }}
+          >
+            Urología Mínimamente Invasiva
+          </h3>
+        </div>
+      )}
+
+      {procedure.id === "artroscopia" && (
+        <div className="col-span-full text-center py-6">
+          <h3
+            className="text-3xl font-bold"
+            style={{ color: "#6b4d9f" }}
+          >
+            Ortopedia Mínimamente Invasiva
+          </h3>
+        </div>
+      )}
+
+
                 <div
                   key={procedure.id}
                   onClick={() => setExpandedService(expandedService === procedure.id ? null : procedure.id)}
-                  className="rounded-2xl p-8 cursor-pointer transition-all duration-500 group overflow-hidden relative"
+                  className="rounded-2xl p-4 cursor-pointer transition-all duration-500 group overflow-hidden relative"
                   style={{
                     backgroundColor: "#ffffff",
                     border: `2px solid ${procedure.color2}`,
-                    minHeight: expandedService === procedure.id ? "auto" : "280px",
+                    minHeight: expandedService === procedure.id ? "auto" : "190px",
                     boxShadow: expandedService === procedure.id ? "0 20px 40px rgba(69, 191, 197, 0.2)" : "0 4px 15px rgba(0,0,0,0.08)",
                     transform: expandedService === procedure.id ? "scale(1.02)" : "scale(1)",
                     animation: `slideInUp 0.6s ease-out ${idx * 0.1}s both`,
@@ -448,26 +484,26 @@ export default function Home() {
                   />
                   
                   <div className="relative z-10">
-                    <div className="flex items-start mb-6">
+                    <div className="flex items-start mb-4">
                       <div
-                        className="p-4 rounded-xl mr-4 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6"
+                        className="p-3 rounded-lg mr-4 transition-all duration-500 group-hover:scale-125 group-hover:rotate-6"
                         style={{ 
                           backgroundColor: `${procedure.color2}20`,
                           border: `2px solid ${procedure.color2}30`
                         }}
                       >
-                        <Icon size={32} style={{ color: procedure.color2 }} />
+                        <Icon size={24} style={{ color: procedure.color2 }} />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-bold text-xl transition-colors duration-300" style={{ color: procedure.color1 }}>
+                        <h3 className="font-bold text-lg transition-colors duration-300" style={{ color: procedure.color1 }}>
                           {procedure.title}
                         </h3>
-                        <p className="text-sm font-semibold mt-1" style={{ color: procedure.color2 }}>
+                        <p className="text-xs font-semibold mt-1" style={{ color: procedure.color2 }}>
                           {procedure.subtitle}
                         </p>
                       </div>
                     </div>
-                    <p className="text-gray-700 text-sm mb-4 leading-relaxed line-clamp-2">{procedure.shortDesc}</p>
+                    <p className="text-gray-700 text-sm mb-2 leading-relaxed line-clamp-2">{procedure.shortDesc}</p>
                     
                     {/* Expand indicator */}
                     <div className="flex items-center justify-between mt-6">
@@ -489,7 +525,7 @@ export default function Home() {
                     </div>
                     
                     {expandedService === procedure.id && (
-                      <div className="mt-8 pt-6 border-t-2 animate-fadeIn" style={{ borderColor: `${procedure.color2}30` }}>
+                      <div className="mt-4 pt-4 border-t animate-fadeIn" style={{ borderColor: `${procedure.color2}30` }}>
                         <p className="text-gray-600 text-sm leading-relaxed">{procedure.fullDesc}</p>
                         <button
                           onClick={(e) => {
@@ -505,6 +541,9 @@ export default function Home() {
                     )}
                   </div>
                 </div>
+
+                </React.Fragment>
+
               );
             })}
           </div>
@@ -512,12 +551,12 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-4 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #ffffff 0%, #f5f0ff 50%, #f0f9fa 100%)" }}>
+      <section className="pt-28 pb-20 px-4 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #ffffff 0%, #f5f0ff 50%, #f0f9fa 100%)" }}>
         {/* Elegant purple gradient overlay */}
         <div className="absolute inset-0 opacity-5" style={{ background: "radial-gradient(circle at 20% 50%, #6b4d9f 0%, transparent 50%), radial-gradient(circle at 80% 80%, #45bfc5 0%, transparent 50%)" }}></div>
         
         <div className="container relative z-10">
-          <div className="text-center mb-20 slide-in-left">
+          <div className="text-center mb-15 slide-in-left">
             <h2 className="text-5xl font-bold mb-6" style={{
               background: "linear-gradient(135deg, #45bfc5 0%, #6b4d9f 100%)",
               WebkitBackgroundClip: "text",
@@ -643,7 +682,7 @@ export default function Home() {
       </section>
 
       {/* Nuestros Aliados Section */}
-      <section className="py-20 px-4" style={{ backgroundColor: "#ffffff" }}>
+      <section className="pt-0 pb-20 px-4" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-16" style={{ color: "#6b4d9f" }}>Nuestros Aliados</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -679,7 +718,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="py-20 px-4" style={{ backgroundColor: "#f9f7fc" }}>
+      <section id="contacto" className="pt-8 pb-20 px-4" style={{ backgroundColor: "#f9f7fc" }}>
         <div className="container">
           <h2 className="text-4xl font-bold text-center mb-16" style={{ color: "#6b4d9f" }}>Contacto</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

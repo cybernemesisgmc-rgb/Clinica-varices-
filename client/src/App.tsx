@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import FinancialStatements from './pages/FinancialStatements';
 import AdminLogin from './pages/AdminLogin';
 import AdminPanel from './pages/AdminPanel';
+import ScrollToHash from "./components/ScrollToHash"; 
 
 function Router() {
   return (
@@ -25,12 +26,11 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
+<TooltipProvider>
+  <Toaster />
+  <ScrollToHash />
+  <Router />
+</TooltipProvider>
     </ErrorBoundary>
   );
 }
