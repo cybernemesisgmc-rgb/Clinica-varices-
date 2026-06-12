@@ -3,11 +3,11 @@ import { FileText, Download, Building2 } from 'lucide-react';
 export default function FinancialStatements() {
   return (
     <div className="min-h-screen bg-white">
-         {/* Navigation */}
+      {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="container flex items-center justify-between py-4 px-4">
+        <div className="container flex flex-col md:flex-row items-center justify-between py-4 px-4 gap-4">
           <h1 className="text-2xl font-bold" style={{ color: '#6b4d9f' }}>Clínica Centro de Varices</h1>
-          <div className="flex gap-6 items-center">
+          <div className="flex flex-wrap gap-4 items-center justify-centerr">
             
 {/*             <button className="text-gray-700 hover:text-cyan-600 transition">Inicio</button>
             <button className="text-gray-700 hover:text-cyan-600 transition">Quiénes Somos</button>
@@ -28,6 +28,8 @@ export default function FinancialStatements() {
           </div>
         </div>
       </nav>
+
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div
