@@ -388,7 +388,7 @@ export default function Home() {
       `}</style>
 
       {/* Procedures Section */}
-      <section id="procedimientos" className="pt-2 pb-0 px-4" style={{ background: "linear-gradient(135deg, #f9f7fc 0%, #ffffff 50%, #f0f9fa 100%)" }}>
+      <section id="procedimientos" className="pt-5 pb-5 px-4" style={{ background: "linear-gradient(135deg, #f9f7fc 0%, #ffffff 50%, #f0f9fa 100%)" }}>
         <div className="container">
  <div className="text-center mb-12">
     <h2
@@ -551,7 +551,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="pt-28 pb-20 px-4 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #ffffff 0%, #f5f0ff 50%, #f0f9fa 100%)" }}>
+      <section className="pt-20 pb-20 px-4 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #ffffff 0%, #f5f0ff 50%, #f0f9fa 100%)" }}>
         {/* Elegant purple gradient overlay */}
         <div className="absolute inset-0 opacity-5" style={{ background: "radial-gradient(circle at 20% 50%, #6b4d9f 0%, transparent 50%), radial-gradient(circle at 80% 80%, #45bfc5 0%, transparent 50%)" }}></div>
         
