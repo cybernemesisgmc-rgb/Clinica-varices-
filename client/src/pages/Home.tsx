@@ -581,7 +581,7 @@ export default function Home() {
                   <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(135deg, #45bfc5, #6b4d9f)", opacity: 0.2 }}></div>
                   <div className="relative bg-white rounded-2xl p-8 border border-cyan-200 hover:border-cyan-500 transition-all duration-500 group-hover:shadow-2xl" style={{ backdropFilter: "blur(10px)" }}>
                     <p className="text-gray-800 leading-relaxed mb-6">
-                      En nuestro centro de várices y cirugías ambulatorias, cada paciente es recibido con la certeza de estar en manos expertas. Nuestro médico líder, el <span className="font-bold" style={{ color: "#45bfc5" }}>Dr. Ángel Parra Liñán</span>, cuenta con <span className="font-bold" style={{ color: "#45bfc5" }}>más de 10 años de experiencia</span> en cirugía endovascular con láser, siendo los primeros en la costa atlántica.
+                      En nuestro centro de várices y cirugías ambulatorias, cada paciente es recibido con la certeza de estar en manos expertas. Nuestro médico líder, el <span className="font-bold" style={{ color: "#45bfc5" }}>Dr. Ángel Parra Liñán</span>, cuenta con <span className="font-bold" style={{ color: "#45bfc5" }}>más de 10 años de experiencia</span> en cirugía endovascular con láser, siendo pioneros en la Costa Caribe colombiana en la aplicación de esta tecnología.
                     </p>
                     <p className="text-gray-600 text-sm italic border-l-4" style={{ borderColor: "#45bfc5", paddingLeft: "1rem" }}>
                       Pioneros en la costa Atlántica en tratamiento de varices con Láser endovascular desde 2014
@@ -648,12 +648,22 @@ export default function Home() {
             <div className="text-center mt-16 slide-in-left">
               <div className="relative group">
                 <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(135deg, #45bfc5, #6b4d9f)", opacity: 0.2 }}></div>
-                <div className="relative bg-white rounded-2xl p-12 border-2 border-cyan-200 hover:border-cyan-500 transition-all duration-500 group-hover:shadow-2xl" style={{ backdropFilter: "blur(10px)" }}>
-                  <p className="text-2xl font-bold text-gray-900 leading-relaxed">
-                    Aquí no solo tratamos <span style={{ color: "#45bfc5" }}>várices</span>…<br />
-                    <span style={{ color: "#6b4d9f" }}>cuidamos personas.</span>
-                  </p>
-                </div>
+<div 
+  className="rounded-3xl p-12 text-center shadow-2xl"
+  style={{
+    background: "linear-gradient(135deg, #45bfc5 0%, #6b4d9f 100%)",
+  }}
+>
+  <div className="text-3xl mb-4 text-white">✦</div>
+
+  <h3 className="text-3xl font-bold text-white mb-6">
+    Comprometidos con tu salud y bienestar
+  </h3>
+
+  <p className="text-white text-lg opacity-90 max-w-3xl mx-auto">
+    Nuestro equipo médico, respaldado por años de experiencia y tecnología especializada, nos permite ofrecer tratamientos seguros, mínimamente invasivos y con altos estándares de calidad.
+  </p>
+</div>
               </div>
             </div>
           </div>
