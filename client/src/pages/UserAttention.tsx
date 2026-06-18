@@ -124,7 +124,7 @@ export default function UserAttention() {
               </h3>
 
               <p className="text-gray-600 mb-6">
-                Registre sus peticiones, quejas, reclamos, sugerencias mediante nuestro canal institucional.
+                Registre sus peticiones, quejas, reclamos y sugerencias mediante nuestro canal institucional.
               </p>
 
               <a
