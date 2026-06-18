@@ -581,7 +581,7 @@ export default function Home() {
                   <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(135deg, #45bfc5, #6b4d9f)", opacity: 0.2 }}></div>
                   <div className="relative bg-white rounded-2xl p-8 border border-cyan-200 hover:border-cyan-500 transition-all duration-500 group-hover:shadow-2xl" style={{ backdropFilter: "blur(10px)" }}>
                     <p className="text-gray-800 leading-relaxed mb-6">
-                      En nuestro centro de várices y cirugías ambulatorias, cada paciente es recibido con la certeza de estar en manos expertas. Nuestro médico líder, el <span className="font-bold" style={{ color: "#45bfc5" }}>Dr. Ángel Parra Liñán</span>, cuenta con <span className="font-bold" style={{ color: "#45bfc5" }}>más de 10 años de experiencia</span> en cirugía endovascular con láser, siendo pioneros en la Costa Caribe colombiana en la aplicación de esta tecnología.
+                      En nuestro centro de várices y cirugías ambulatorias, cada paciente es recibido con la certeza de estar en manos expertas. Nuestro médico líder, el <span className="font-bold" style={{ color: "#45bfc5" }}>Dr. Ángel Parra Liñán</span>, cuenta con <span className="font-bold" style={{ color: "#45bfc5" }}>más de 10 años de experiencia</span> en cirugía endovascular con láser, siendo pioneros en la implementación de esta tecnología en la Costa Caribe colombiana.
                     </p>
                     <p className="text-gray-600 text-sm italic border-l-4" style={{ borderColor: "#45bfc5", paddingLeft: "1rem" }}>
                       Pioneros en la costa Atlántica en tratamiento de varices con Láser endovascular desde 2014
