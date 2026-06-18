@@ -1,4 +1,6 @@
 import { MessageSquareText, Star, HeartHandshake } from 'lucide-react';
+import qrPQRSF from "../../../public/qr-pqrsf.png";
+import qrEncuesta from "../../../public/qr-encuesta.png";
 
 export default function UserAttention() {
   return (
@@ -120,23 +122,35 @@ export default function UserAttention() {
               />
 
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Sistema PQRS
+                Sistema PQRSF
               </h3>
 
               <p className="text-gray-600 mb-6">
-                Registre sus peticiones, quejas, reclamos y sugerencias mediante nuestro canal institucional.
+                Registre sus peticiones, quejas, reclamos, sugerencias y felicitaciones mediante nuestro canal institucional.
               </p>
-
+<div className="flex flex-col items-center mb-6">
+  <img
+    src={qrPQRSF}
+    alt="Código QR Sistema PQRSF"
+    className="w-40 h-40 object-contain rounded-lg border p-2 bg-white shadow-sm"
+  />
+  <p className="text-sm text-gray-500 mt-2">
+    Escanee el código QR
+  </p>
+</div>
+<div className="flex justify-center">
               <a
-                href="/pqr"
+                href="https://forms.gle/naKU3ZzgWzJWV8KWA"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 className="inline-flex items-center px-5 py-3 rounded-xl text-white font-semibold transition-transform hover:scale-105"
                 style={{
                   background:
                     "linear-gradient(135deg, #45bfc5 0%, #6b4d9f 100%)",
                 }}
               >
-                Radicar una PQRS
-              </a>
+                Radicar una PQRSF
+              </a></div>
             </div>
 
 
@@ -156,8 +170,21 @@ export default function UserAttention() {
                 recibida y ayúdenos a mejorar nuestros servicios.
               </p>
 
+<div className="flex flex-col items-center mb-6">
+  <img
+    src={qrEncuesta}
+    alt="Código QR Encuesta de Satisfacción"
+    className="w-40 h-40 object-contain rounded-lg border p-2 bg-white shadow-sm"
+  />
+  <p className="text-sm text-gray-500 mt-2">
+    Escanee el código QR
+  </p>
+</div>
+<div className="flex justify-center">
               <a
-                href="/encuesta-satisfaccion"
+                href="https://forms.gle/nGKLAunUShf9mdmA7"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 className="inline-flex items-center px-5 py-3 rounded-xl text-white font-semibold transition-transform hover:scale-105"
                 style={{
                   background:
@@ -165,7 +192,7 @@ export default function UserAttention() {
                 }}
               >
                 Responder Encuesta
-              </a>
+              </a></div>
             </div>
 
           </div>
