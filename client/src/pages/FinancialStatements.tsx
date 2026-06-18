@@ -18,6 +18,7 @@ export default function FinancialStatements() {
               <a href="/#procedimientos" className="text-gray-700 hover:text-cyan-600 transition">Procedimientos</a>
               <a href="/#contacto" className="text-gray-700 hover:text-cyan-600 transition">Contacto</a>
               <a href="/financial-statements" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Estados Financieros</a>
+              <a href="/atencion-al-usuario" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Atención al usuario</a>
             <button
               onClick={() => window.open(`https://wa.me/573135735276?text=Hola, quisiera agendar una cita`, "_blank")}
               style={{ backgroundColor: "#45bfc5" }}

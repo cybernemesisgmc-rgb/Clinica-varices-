@@ -33,10 +33,7 @@ export default function UserAttention() {
               Estados Financieros
             </a>
 
-            <a href="/atencion-al-usuario" className="text-gray-700 hover:text-cyan-600 transition">
-              Atención al Usuario
-            </a>
-
+            <a href="/atencion-al-usuario" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Atención al usuario</a>
             <button
               onClick={() =>
                 window.open(
