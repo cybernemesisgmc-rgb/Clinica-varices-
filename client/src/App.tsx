@@ -8,12 +8,14 @@ import Home from './pages/Home';
 import FinancialStatements from './pages/FinancialStatements';
 import AdminLogin from './pages/AdminLogin';
 import AdminPanel from './pages/AdminPanel';
-import ScrollToHash from "./components/ScrollToHash"; 
+import ScrollToHash from "./components/ScrollToHash";
+import UserAttention from "./pages/UserAttention";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/atencion-al-usuario" component={UserAttention} />
       <Route path="/financial-statements" component={FinancialStatements} />
       <Route path="/financial-statements/login" component={AdminLogin} />
       <Route path="/financial-statements/admin" component={AdminPanel} />

@@ -733,32 +733,40 @@ export default function Home() {
               <p className="text-gray-700 mb-6">Domingos y Festivos: Cerrado</p>
               
               <h3 className="text-xl font-bold mb-4" style={{ color: "#45bfc5" }}>Ubicación</h3>
-              <p className="text-gray-700">Montería, Córdoba</p>
+              <p className="text-gray-700">Cra. 2 #21-77, Montería, Córdoba</p>
               <p className="text-gray-700">Colombia</p>
             </div>
             
             <div>
               <h3 className="text-xl font-bold mb-6" style={{ color: "#45bfc5" }}>Envíanos tu Consulta</h3>
-              <form className="space-y-4">
+              <form
+                action="https://formspree.io/f/mwvjdbpq"
+                method="POST"
+                className="space-y-4"
+              >
                 <input
+                  name="nombre"
                   type="text"
                   placeholder="Tu nombre"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500"
-                />
+                required />
                 <input
+                  name="email"
                   type="email"
                   placeholder="tu@email.com"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500"
-                />
+                required />
                 <input
+                  name="telefono"
                   type="tel"
                   placeholder="Tu teléfono"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500"
                 />
                 <textarea
+                  name="mensaje"
                   placeholder="Tu consulta o mensaje"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500 h-24"
-                ></textarea>
+                required></textarea>
                 <button
                   type="submit"
                   style={{ backgroundColor: "#45bfc5" }}
