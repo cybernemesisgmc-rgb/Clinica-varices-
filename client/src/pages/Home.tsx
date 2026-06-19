@@ -790,7 +790,7 @@ export default function Home() {
     <button
       onClick={() =>
         window.open(
-          "https://www.google.com/maps/place/Centro+de+varices",
+          "https://www.google.com/maps/search/?api=1&query=Centro+de+Varices+Cra+2+21-77+Monteria+Cordoba",
           "_blank"
         )
       }
