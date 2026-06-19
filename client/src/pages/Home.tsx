@@ -761,12 +761,49 @@ export default function Home() {
               <p className="text-gray-700 mb-1">Sábados: 8:00 AM - 12:00 PM</p>
               <p className="text-gray-700 mb-6">Domingos y Festivos: Cerrado</p>
               
-              <h3 className="text-xl font-bold mb-4" style={{ color: "#45bfc5" }}>Ubicación</h3>
-              <p className="text-gray-700">Cra. 2 #21-77, Montería, Córdoba</p>
-              <p className="text-gray-700">Colombia</p>
+<h3 className="text-xl font-bold mb-4" style={{ color: "#45bfc5" }}>
+  Ubicación
+</h3>
+
+<p className="text-gray-700">
+  Cra. 2 #21-77, Montería, Córdoba
+</p>
+<p className="text-gray-700 mb-4">
+  Colombia
+</p>
+
+<div className="flex flex-col items-start">
+  <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 w-[220px] h-[220px]">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.3508522759153!2d-75.89450263176444!3d8.753021172064791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2f005bb7f87b%3A0xf3dd96528da0e426!2sCentro%20de%20varices!5e0!3m2!1ses-419!2sco!4v1781903195919!5m2!1ses-419!2sco"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Ubicación Clínica Centro de Várices"
+    />
+  </div>
+
+  <div className="w-[220px] flex justify-center">
+    <button
+      onClick={() =>
+        window.open(
+          "https://www.google.com/maps/place/Centro+de+varices",
+          "_blank"
+        )
+      }
+      className="w-full mt-3 px-4 py-2 rounded-lg text-white font-semibold hover:opacity-90 transition"
+      style={{ backgroundColor: "#45bfc5" }}
+    >
+      Cómo llegar
+    </button>
+  </div>
+</div>
             </div>
             
-            <div>
+            <div className="flex flex-col justify-center">
               <h3 className="text-xl font-bold mb-6" style={{ color: "#45bfc5" }}>Envíanos tu Consulta</h3>
               <form
                 action="https://formspree.io/f/mwvjdbpq"
