@@ -6,21 +6,39 @@ export default function FinancialStatements() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="container flex flex-col md:flex-row items-center justify-between py-4 px-4 gap-4">
-          <h1 className="text-2xl font-bold" style={{ color: '#6b4d9f' }}>Clínica Centro de Varices</h1>
-          <div className="flex flex-wrap gap-4 items-center justify-centerr">
-            
-{/*             <button className="text-gray-700 hover:text-cyan-600 transition">Inicio</button>
-            <button className="text-gray-700 hover:text-cyan-600 transition">Quiénes Somos</button>
-            <button className="text-gray-700 hover:text-cyan-600 transition">Procedimientos</button>
-            <button className="text-gray-700 hover:text-cyan-600 transition">Contacto</button> */}
-              <a href="/#inicio" className="text-gray-700 hover:text-cyan-600 transition">Inicio</a>
-              <a href="/#quienes-somos" className="text-gray-700 hover:text-cyan-600 transition">Quiénes Somos</a>
-              <a href="/#procedimientos" className="text-gray-700 hover:text-cyan-600 transition">Procedimientos</a>
-              <a href="/#contacto" className="text-gray-700 hover:text-cyan-600 transition">Contacto</a>
-              <a href="/financial-statements" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Estados Financieros</a>
-              <a href="/atencion-al-usuario" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Atención al usuario</a>
+          <h1 className="text-2xl font-bold" style={{ color: '#6b4d9f' }}>
+            Clínica Centro de Varices
+          </h1>
+
+          <div className="flex flex-wrap gap-4 items-center justify-center">
+            <a href="/#inicio" className="text-gray-700 hover:text-cyan-600 transition">
+              Inicio
+            </a>
+
+            <a href="/#quienes-somos" className="text-gray-700 hover:text-cyan-600 transition">
+              Quiénes Somos
+            </a>
+
+            <a href="/#procedimientos" className="text-gray-700 hover:text-cyan-600 transition">
+              Procedimientos
+            </a>
+
+            <a href="/#contacto" className="text-gray-700 hover:text-cyan-600 transition">
+              Contacto
+            </a>
+
+            <a href="/financial-statements" className="text-gray-700 hover:text-cyan-600 transition">
+              Estados Financieros
+            </a>
+
+            <a href="/atencion-al-usuario" className="text-gray-700 hover:text-cyan-600 transition h-full flex items-center">Atención al usuario</a>
             <button
-              onClick={() => window.open(`https://wa.me/573135735276?text=Hola, quisiera agendar una cita`, "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://wa.me/573135735276?text=Hola, quisiera agendar una cita",
+                  "_blank"
+                )
+              }
               style={{ backgroundColor: "#45bfc5" }}
               className="px-6 py-2 text-white rounded-lg hover:opacity-90 transition font-semibold"
             >
