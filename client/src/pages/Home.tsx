@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Heart, Zap, Droplets, Scissors, Syringe, Eye, Gauge, Lightbulb, Wind, Activity, Bone } from 'lucide-react';
+import VideoGallery from "../components/VideoGallery";
 
 export default function Home() {
   const [expandedService, setExpandedService] = useState<string | null>(null);
@@ -10,7 +11,10 @@ export default function Home() {
     { id: '3', name: 'Dr. Francisco Berrocal', specialty: 'Cirujano General', image: '/specialists/specialist-2.jpg' },
     { id: '4', name: 'Dr. Rubén Banda', specialty: 'Urólogo', image: '/specialists/specialist-3.jpg' },
     { id: '5', name: 'Dr. Lenin Ballesteros', specialty: 'Ortopedia Mínimamente Invasiva', image: '/specialists/specialist-4.jpg' },
-    {id: '6', name: 'Dr. Luis Carlos Velasco', specialty: 'Urólogo', image: '/specialists/luis-velasco.jpg' },
+    { id: '6', name: 'Dr. Aurelio Monterrosa', specialty: 'Anestesiólogo', image: '/specialists/aurelio-monterrosa.jpg' },
+    { id: '7', name: 'Dr. Javier Morales', specialty: 'Anestesiólogo', image: '/specialists/javier-morales.jpg' },
+    { id: '8', name: 'Dr. Gloria Ruiz', specialty: 'Anestesióloga', image: '/specialists/gloria-ruiz.jpg' },
+    {id: '9', name: 'Dr. Luis Carlos Velasco', specialty: 'Urólogo', image: '/specialists/luis-velasco.jpg' },
   ];
   
   const procedures = [
@@ -260,8 +264,8 @@ export default function Home() {
               Inicio
             </a>
 
-            <a href="/#quienes-somos" className="text-gray-700 hover:text-cyan-600 transition">
-              Quiénes Somos
+            <a href="/#conocenos" className="text-gray-700 hover:text-cyan-600 transition">
+              Conócenos
             </a>
 
             <a href="/#procedimientos" className="text-gray-700 hover:text-cyan-600 transition">
@@ -323,19 +327,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Description Section */}
-      <section  id="quienes-somos" className="py-16 px-4 scroll-mt-32" style={{ backgroundColor: "#f9f7fc" }}>
+{/* Videos Section */}
+<div id="conocenos" className="scroll-mt-24">
+  <VideoGallery />
+</div>
+
+      {/* Specialists Section - Grid Layout */}
+      <section className="pt-0 pb-10 px-4" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <h2 className="text-4xl font-bold text-center mb-5" style={{ color: "#6b4d9f" }}>Nuestros Especialistas</h2>
         <div className="container text-center">
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <p className="mb-5 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
             Somos especialistas en el tratamiento de varices con tecnología de vanguardia y un equipo médico altamente capacitado. Ofrecemos soluciones personalizadas para mejorar tu calidad de vida.
           </p>
         </div>
-      </section>
-
-      {/* Specialists Section - Grid Layout */}
-      <section className="pt-9 pb-10 px-4" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container">
-          <h2 className="text-4xl font-bold text-center mb-10" style={{ color: "#6b4d9f" }}>Nuestros Especialistas</h2>
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap-6">
             {specialists.map((specialist, index) => (
               <div
@@ -352,11 +357,11 @@ export default function Home() {
                     backgroundColor: '#ffffff',
                   }}
                 >
-                  <img
-                    src={specialist.image}
-                    alt={specialist.name}
-                    className="w-full h-48 object-cover"
-                  />
+<img
+  src={specialist.image}
+  alt={specialist.name}
+  className="w-full h-full object-cover object-top"
+/>
                   <div className="p-4 text-center">
                     <h3 className="font-bold text-lg mb-1" style={{ color: '#6b4d9f' }}>
                       {specialist.name}
